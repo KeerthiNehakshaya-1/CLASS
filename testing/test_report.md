@@ -10,22 +10,24 @@ The testing was performed using the constructed demonstration dataset containing
 
 ## 2. Module Testing
 
-| Test ID | Module                | Test Performed                           | Expected Result                                                   | Status |
-| ------- | --------------------- | ---------------------------------------- | ----------------------------------------------------------------- | ------ |
-| T01     | Data Cleaning         | Load raw CSV and validate data           | Dataset loads successfully and invalid/missing values are handled | Pass   |
-| T02     | Preprocessing         | Normalize analytical parameters          | Normalized columns are generated correctly                        | Pass   |
-| T03     | EDA                   | Generate statistical summaries and plots | Statistics and visualizations are generated                       | Pass   |
-| T04     | Correlation           | Calculate Pearson correlations           | Correlation matrix is generated                                   | Pass   |
-| T05     | Cognitive Load        | Calculate CLI                            | CLI score and classification are generated                        | Pass   |
-| T06     | Fatigue Recovery      | Calculate recovery score                 | Fatigue Recovery Score is generated                               | Pass   |
-| T07     | Performance Stability | Calculate rolling performance stability  | PSI is generated                                                  | Pass   |
-| T08     | Decision Efficiency   | Calculate efficiency score               | Decision Efficiency Score is generated                            | Pass   |
-| T09     | Mission Readiness     | Combine analytical metrics               | Mission Readiness Score is generated                              | Pass   |
-| T10     | Risk Analysis         | Apply risk rules                         | Risk level and risk factors are generated                         | Pass   |
-| T11     | Scenario Simulator    | Modify mission conditions                | Scenario metrics are recalculated                                 | Pass   |
-| T12     | Visualization         | Generate analytical charts               | Required charts are saved successfully                            | Pass   |
-| T13     | Dashboard             | Select astronaut and mission day         | Corresponding metrics are displayed                               | Pass   |
-| T14     | Integration           | Execute complete pipeline                | All processing stages execute successfully                        | Pass   |
+### System Testing
+
+| ID  | Module                | Test                          | Expected Result                            | Status |
+| --- | --------------------- | ----------------------------- | ------------------------------------------ | ------ |
+| T01 | Data Cleaning         | Load & validate CSV           | Data loads; invalid/missing values handled | Pass   |
+| T02 | Preprocessing         | Normalize parameters          | Normalized columns generated               | Pass   |
+| T03 | EDA                   | Generate statistics & plots   | Statistics and plots generated             | Pass   |
+| T04 | Correlation           | Calculate Pearson correlation | Correlation matrix generated               | Pass   |
+| T05 | Cognitive Load        | Calculate CLI                 | CLI score & classification generated       | Pass   |
+| T06 | Fatigue Recovery      | Calculate recovery score      | FRS generated                              | Pass   |
+| T07 | Performance Stability | Calculate rolling stability   | PSI generated                              | Pass   |
+| T08 | Decision Efficiency   | Calculate efficiency          | DES generated                              | Pass   |
+| T09 | Mission Readiness     | Combine metrics               | MRS generated                              | Pass   |
+| T10 | Risk Analysis         | Apply risk rules              | Risk level & factors generated             | Pass   |
+| T11 | Scenario Simulator    | Modify conditions             | Scenario metrics recalculated              | Pass   |
+| T12 | Visualization         | Generate charts               | Required charts saved                      | Pass   |
+| T13 | Dashboard             | Select astronaut/day          | Corresponding metrics displayed            | Pass   |
+| T14 | Integration           | Execute full pipeline         | All stages execute successfully            | Pass   |
 
 ---
 

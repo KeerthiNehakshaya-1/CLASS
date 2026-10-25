@@ -332,6 +332,13 @@ CLASS/
 │   ├── data_cleaning.py
 │   └── data_preprocessing.py
 │
+|__ reports/
+|   ├── CLASS_Mission_Analysis_Reports.pdf
+|   └── generate_report.py
+|
+|__ testing/
+|   └── test_report.md
+|
 └── visualizations/
     ├── cognitive_load_trend.png
     ├── mission_readiness_trend.png
